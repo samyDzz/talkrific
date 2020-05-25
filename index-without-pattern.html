@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="icon" type="image/png" href="img/chat.png" />
+		<meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Talkrific</title>
+		<meta name="description" content=""/>
+		<meta property="og:title" content=""/>
+
+		<!-- BOOTSTRAP -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+		<!-- FONTS -->
+		<link href="css/fonts.css" rel="stylesheet">
+
+
+		<!-- STYLESHEETS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style-responsive.css">
+
+		<!-- Place your kit's code here -->
+	    <script src="js/font-awesome.js"></script>
+	</head>
+	<body>
+
+			<div class="black"></div>
+			<div class="call-box audio-call">
+				<div class="row marge0">
+					<div class="col-lg-12 col-md-12 col-12 call-box-header">
+						<h3>Incoming Voice Call</h3>
+					</div>
+					<div class="col-lg-12 col-md-12 profile call-avatar-profile">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-12 profile-left">
+								<img src="img/profils/profil1.png" class="call-avatar" alt="profil">
+							</div>
+							<div class="col-lg-12 col-md-12 col-12 profile-infos">
+								<h3>Username</h3>
+								<p>Cristine Archibald</p>
+							</div>
+							<div class="col-lg-12 col-md-12 col-12 profile-infos">
+								<button type="button" class="btn btn-success">ACCEPT</button>
+								<button type="button" class="btn btn-danger">REFUSE</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="call-box video-call">
+				<div class="row marge0">
+					<div class="col-lg-12 col-md-12 col-12 call-box-header">
+						<h3>Incoming Video Call</h3>
+					</div>
+					<div class="col-lg-12 col-md-12 profile call-avatar-profile">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-12 profile-left">
+								<img src="img/profils/profil1.png" class="call-avatar" alt="profil">
+							</div>
+							<div class="col-lg-12 col-md-12 col-12 profile-infos">
+								<h3>Username</h3>
+								<p>Cristine Archibald</p>
+							</div>
+							<div class="col-lg-12 col-md-12 col-12 profile-infos">
+								<button type="button" class="btn btn-success">ACCEPT</button>
+								<button type="button" class="btn btn-danger">REFUSE</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid wrapper-chat">
+				<div class="row">
+					<div class="col-lg-3 col-md-4 wrapper-infos">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 infos-header">
+								<div class="row">
+									<div class="col-lg-7 col-md-7 col-7 left">
+										<a href="index.html">
+											<img src="img/chat.png" class="logo">			
+											Olivia Ben							
+										</a>
+									</div>
+									<div class="col-lg-5 col-md-5 col-5 right">
+										<a href="login.html">
+											<i class="fas fa-sign-out-alt logout"></i>										
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-12 infos-search">
+								<form>
+	                                <div class="input-group">
+	                                  <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="chat-left-search-btn">
+	                                  <div class="input-group-append">
+	                                    <button class="btn" type="submit" id="chat-left-search-btn"><i class="fas fa-search"></i></button>
+	                                  </div>
+	                                </div>
+	                            </form>
+							</div>
+							<div class="col-lg-12 col-md-12 contact-list">
+								<div class="row">
+									<div class="col-lg-12 col-md-12 contact active-contact">
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-2 contact-left">
+												<div class="user-status"></div>
+												<img src="img/profils/profil1.png" alt="profil">
+											</div>
+											<div class="col-lg-9 col-md-9 col-10 contact-infos">
+												<h3><b class="name_of_contact">Harper Archibald</b><span class="chat-timing">01:30 pm</span></h3>
+												<p>Look there, you'll find it :)</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 contact">
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-2 contact-left">
+												<div class="user-status"></div>
+												<img src="img/profils/profil2.png" alt="profil">
+											</div>
+											<div class="col-lg-9 col-md-9 col-10 contact-infos">
+												<h3><b class="name_of_contact">Cristine Archibald</b><span class="chat-timing">16:30 pm</span></h3>
+												<p>Hi..</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 contact">
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-2 contact-left">
+												<div class="user-status"></div>
+												<img src="img/profils/profil3.png" alt="profil">
+											</div>
+											<div class="col-lg-9 col-md-9 col-10 contact-infos">
+												<h3><b class="name_of_contact">Mehmet Sophia</b><span class="chat-timing">02:30 pm</span></h3>
+												<p>Lauren Dekinson</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 contact">
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-2 contact-left">
+												<div class="user-status"></div>
+												<img src="img/profils/profil4.png" alt="profil">
+											</div>
+											<div class="col-lg-9 col-md-9 col-10 contact-infos">
+												<h3><b class="name_of_contact">Noah woodson</b><span class="chat-timing">22:30 pm</span></h3>
+												<p>Kim is here, please come !</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 contact">
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-2 contact-left">
+												<div class="user-status"></div>
+												<img src="img/profils/profil5.png" alt="profil">
+											</div>
+											<div class="col-lg-9 col-md-9 col-10 contact-infos">
+												<h3><b class="name_of_contact">Olivia Benjamin</b><span class="chat-timing">02:30 pm</span></h3>
+												<p>Cocking is great lol...</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 contact">
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-2 contact-left">
+												<div class="user-status"></div>
+												<img src="img/profils/profil3.png" alt="profil">
+											</div>
+											<div class="col-lg-9 col-md-9 col-10 contact-infos">
+												<h3><b class="name_of_contact">Olivia archibald</b><span class="chat-timing">02:30 pm</span></h3>
+												<p>the project is done so far</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 contact">
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-2 contact-left">
+												<div class="user-status"></div>
+												<img src="img/profils/profil2.png" alt="profil">
+											</div>
+											<div class="col-lg-9 col-md-9 col-10 contact-infos">
+												<h3><b class="name_of_contact">Harper Archibald</b><span class="chat-timing">16:30 pm</span></h3>
+												<p>Hi..</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 contact">
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-2 contact-left">
+												<div class="user-status"></div>
+												<img src="img/profils/profil1.png" alt="profil">
+											</div>
+											<div class="col-lg-9 col-md-9 col-10 contact-infos">
+												<h3><b class="name_of_contact">Benjamin Bass</b><span class="chat-timing">02:30 pm</span></h3>
+												<p>Lauren Dekinson</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 contact">
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-2 contact-left">
+												<div class="user-status"></div>
+												<img src="img/profils/profil4.png" alt="profil">
+											</div>
+											<div class="col-lg-9 col-md-9 col-10 contact-infos">
+												<h3><b class="name_of_contact">Evelyn Sophia</b><span class="chat-timing">22:30 pm</span></h3>
+												<p>Kim est la !</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 contact">
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-2 contact-left">
+												<div class="user-status"></div>
+												<img src="img/profils/profil5.png" alt="profil">
+											</div>
+											<div class="col-lg-9 col-md-9 col-10 contact-infos">
+												<h3><b class="name_of_contact">Cristine Benjamin</b><span class="chat-timing">02:30 pm</span></h3>
+												<p>look at images and let me know</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 contact">
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-2 contact-left">
+												<div class="user-status"></div>
+												<img src="img/profils/profil1.png" alt="profil">
+											</div>
+											<div class="col-lg-9 col-md-9 col-10 contact-infos">
+												<h3><b class="name_of_contact">Nate Archibald</b><span class="chat-timing">16:30 pm</span></h3>
+												<p>Hi..</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 contact">
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-2 contact-left">
+												<div class="user-status"></div>
+												<img src="img/profils/profil4.png" alt="profil">
+											</div>
+											<div class="col-lg-9 col-md-9 col-10 contact-infos">
+												<h3><b class="name_of_contact">Olivia Kenzo</b><span class="chat-timing">02:30 pm</span></h3>
+												<p>Lauren is Arrived !</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 contact">
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-2 contact-left">
+												<div class="user-status"></div>
+												<img src="img/profils/profil3.png" alt="profil">
+											</div>
+											<div class="col-lg-9 col-md-9 col-10 contact-infos">
+												<h3><b class="name_of_contact">Serena Lucas</b><span class="chat-timing">22:30 pm</span></h3>
+												<p>Kim est la !</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 contact">
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-2 contact-left">
+												<div class="user-status"></div>
+												<img src="img/profils/profil1.png" alt="profil">
+											</div>
+											<div class="col-lg-9 col-md-9 col-10 contact-infos">
+												<h3><b class="name_of_contact">Cristine Mia</b><span class="chat-timing">02:30 pm</span></h3>
+												<p>please, let me know the thing...</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-12 contact-profile" style="display: none;">
+								<div class="row">
+									<div class="col-lg-12 col-md-12 profile avatar-profile">
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-12 profile-left">
+												<img src="img/profils/profil4.png" class="avatar" alt="profil">
+											</div>
+											<div class="col-lg-12 col-md-12 col-12 profile-infos">
+												<h3>Username</h3>
+												<p>Cristine Archibald</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 profile">
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-2 profile-left">
+												<i class="far fa-user"></i>
+											</div>
+											<div class="col-lg-9 col-md-9 col-10 profile-infos">
+												<h3>Username</h3>
+												<p>Cristine Archibald</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 profile">
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-2 profile-left">
+												<i class="far fa-map"></i>
+											</div>
+											<div class="col-lg-9 col-md-9 col-10 profile-infos">
+												<h3>Location</h3>
+												<p>Manhattan, NY</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 profile">
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-2 profile-left">
+												<i class="far fa-comment-alt"></i>
+											</div>
+											<div class="col-lg-9 col-md-9 col-10 profile-infos">
+												<h3>Status</h3>
+												<p>Web developer</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 profile">
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-2 profile-left">
+												<i class="far fa-envelope"></i>
+											</div>
+											<div class="col-lg-9 col-md-9 col-10 profile-infos">
+												<h3>Email ID</h3>
+												<p>cristine-archibald@gmail.com</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 profile">
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-2 profile-left">
+												<i class="fas fa-lock"></i>
+											</div>
+											<div class="col-lg-9 col-md-9 col-10 profile-infos">
+												<h3>Password</h3>
+												<p>********</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-12 contact-settings" style="display: none;">
+								<div class="row">
+									<div class="col-lg-12 col-md-12 col-12 settings">
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-12 settings-left">
+												<h3>Privacy Settings</h3>
+											</div>
+											<div class="col-lg-12 col-md-12 col-12 settings-infos">
+												<p>Show Profile Picture</p>
+												<div class="custom-control custom-checkbox">
+											        <input type="checkbox" checked="" class="custom-control-input" id="customCheckBox5">
+											        <label class="custom-control-label" for="customCheckBox5"></label>
+											    </div>
+											</div>
+											<div class="col-lg-12 col-md-12 col-12 settings-infos">
+												<p>Read Receipts</p>
+												<div class="custom-control custom-checkbox">
+											        <input type="checkbox" checked="" class="custom-control-input" id="customCheckBox4">
+											        <label class="custom-control-label" for="customCheckBox4"></label>
+											    </div>
+											</div>
+											<div class="col-lg-12 col-md-12 col-12 settings-infos">
+												<p>Allow Messages from Strangers</p>
+												<div class="custom-control custom-checkbox">
+											        <input type="checkbox" class="custom-control-input" id="customCheckBox6">
+											        <label class="custom-control-label" for="customCheckBox6"></label>
+											    </div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 col-12 settings pad35">
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-12 settings-left">
+												<h3>General Settings</h3>
+											</div>
+											<div class="col-lg-12 col-md-12 col-12 settings-infos">
+												<p>New Message Alerts</p>
+												<div class="custom-control custom-checkbox">
+											        <input type="checkbox" class="custom-control-input" id="customCheckBox2">
+											        <label class="custom-control-label" for="customCheckBox2"></label>
+											    </div>
+											</div>
+											<div class="col-lg-12 col-md-12 col-12 settings-infos">
+												<p>Notification Sounds</p>
+												<div class="custom-control custom-checkbox">
+											        <input type="checkbox" checked="" class="custom-control-input" id="customCheckBox1">
+											        <label class="custom-control-label" for="customCheckBox1"></label>
+											    </div>
+											</div>
+											<div class="col-lg-12 col-md-12 col-12 settings-infos">
+												<p>Show Mini Messages in Sidebar</p>
+												<div class="custom-control custom-checkbox">
+											        <input type="checkbox" checked="" class="custom-control-input" id="customCheckBox3">
+											        <label class="custom-control-label" for="customCheckBox3"></label>
+											    </div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 col-12 settings pad35">
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-12 settings-left">
+												<h3>Design Settings</h3>
+											</div>
+											<div class="col-lg-12 col-md-12 col-12 settings-infos">
+												<span class="box box-green"></span>
+												<span class="box box-red"></span>
+												<span class="box box-gray"></span>
+												<span class="box box-blue"></span>
+												<span class="box box-yellow"></span>
+												<span class="box box-dark-green"></span>
+												<span class="box box-dark-blue"></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-12 contact-menu">
+								<ul class="menu">
+									<a href="#">
+										<li class="all-discussions contact-menu-active">
+											<i class="far fa-comment-alt"></i>
+										</li>
+									</a>
+									<a href="#">
+										<li class="profil-menu">
+											<i class="far fa-user"></i>
+										</li>
+									</a>
+									<a href="#">
+										<li class="settings-menu">
+											<i class="fas fa-cog"></i>
+										</li>
+									</a>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-8 col-12 d-none d-lg-block d-md-block wrapper-discussion">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 discussion-header">
+								<div class="row">
+									<div class="col-lg-4 col-7 discussion">
+										<div class="row">
+											<div class="col-lg-3 col-md-2 col-4 contact-left">
+												<div class="user-status-discussion"></div>
+												<img src="img/profils/profil1.png" alt="profil">
+											</div>
+											<div class="col-lg-9 col-md-10 col-8 contact-infos discussion-infos">
+												<h3>Olivia archibald</h3>
+												<p>Online</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-8 col-5 discussion-menu">
+										<ul class="d-menu">
+											<a href="#">
+												<li class="to-audio-call">
+													<i class="fas fa-phone-alt"></i>
+												</li>
+											</a>
+											<a href="#">
+												<li class="to-video-call">
+													<i class="fas fa-video"></i>
+												</li>
+											</a>
+											<!-- <a href="#">
+												<li>
+													<i class="fas fa-ellipsis-v"></i>
+												</li>
+											</a> -->
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-12 discussion-list" style="background: #d9d9d9;">
+								<div class="row" id="discussion-block">
+									<div class="col-lg-12 col-md-12 date-chat">
+										<span class="badge">Yesterday</span>	
+									</div>
+									<div class="col-lg-12 col-md-12 message-chat message-chat-right">
+		                                <div class="message-chat-text">
+		                                    <span>You only have to come in order to go with me </span>
+		                                </div>
+		                                <div class="message-chat-meta">
+		                                    <span>16:05 pm<i class="fas fa-check"></i></span>
+		                                </div>
+		                            </div>
+		                            <div class="col-lg-12 col-md-12 message-chat message-chat-left">
+		                                <div class="message-chat-text">
+		                                    <audio controls="">
+	                                          <source src="media/audio.mp3" type="audio/mpeg">
+	                                        </audio>
+		                                </div>
+		                                <div class="message-chat-meta">
+		                                    <span>16:13 pm<i class="fas fa-check"></i></span>
+		                                </div>
+		                            </div>
+		                            <div class="col-lg-12 col-md-12 message-chat message-chat-left">
+		                                <div class="message-chat-text">
+		                                    <span>
+		                                    	It’s my fault for not comming
+		                                    	<br>
+		                                    	 It’s said that i can come
+		                                	</span>
+		                                </div>
+		                                <div class="message-chat-meta">
+		                                    <span>16:25 pm<i class="fas fa-check"></i></span>
+		                                </div>
+		                            </div>
+		                            <div class="col-lg-12 col-md-12 message-chat message-chat-right">
+		                                <div class="message-chat-text">
+		                                    <video width="210" controls="">
+                                              <source src="media/video.mp4" type="video/mp4">
+                                            </video>
+                                            <p>Video.mp4</p>
+		                                </div>
+		                                <div class="message-chat-meta">
+		                                    <span>16:34 pm<i class="fas fa-check"></i></span>
+		                                </div>
+		                            </div>
+									<div class="col-lg-12 col-md-12 date-chat">
+										<span class="badge">Today</span>	
+									</div>
+									<div class="col-lg-12 col-md-12 message-chat message-chat-right">
+		                                <div class="message-chat-text">
+		                                    <img class="pdf-img" src="img/pdf.svg" alt="pdf">
+                                            <div class="pdf-body">
+                                                <h5><a href="#">Doc.pdf</a></h5>
+                                                <p>35kb</p>
+                                            </div>
+		                                </div>
+		                                <div class="message-chat-meta">
+		                                    <span>16:43 pm<i class="fas fa-check"></i></span>
+		                                </div>
+		                            </div>
+		                            <div class="col-lg-12 col-md-12 message-chat message-chat-left">
+		                                <div class="message-chat-text">
+		                                    <img src="img/media_01.png">
+		                                    <img src="img/media_02.png">
+		                                    <div class="plus-photo">+07</div>
+                                            <p>Photos of product</p>
+		                                </div>
+		                                <div class="message-chat-meta">
+		                                    <span>16:45 pm<i class="fas fa-check"></i></span>
+		                                </div>
+		                            </div>
+		                            <div class="col-lg-12 col-md-12 message-chat message-chat-right">
+		                                <div class="message-chat-text">
+		                                    <span>What I’m trying to say is if you come then it will be easy</span>
+		                                </div>
+		                                <div class="message-chat-meta">
+		                                    <span>16:45 pm<i class="fas fa-check"></i></span>
+		                                </div>
+		                            </div>
+		                            <div class="col-lg-12 col-md-12 message-chat message-chat-left">
+		                                <div class="message-chat-text">
+		                                    <span>
+		                                    	Okay then
+		                                	</span>
+		                                </div>
+		                                <div class="message-chat-meta">
+		                                    <span>16:55 pm<i class="fas fa-check"></i></span>
+		                                </div>
+		                            </div>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-12 discussion-message">
+								<ul class="d-message">
+									<!-- <a href="#">
+										<li>
+											<i class="fas fa-microphone"></i>
+										</li>
+									</a> -->
+									<a href="#">
+										<li class="message-block">
+											<input type="text" name="messages" placeholder="Type a message...">
+										</li>
+									</a>
+									<a href="#">
+										<li>
+											<input type="file" name="fileToUpload" id="fileToUpload" style="display: none;">
+											<i class="fas fa-paperclip"></i>
+										</li>
+									</a>
+									<a href="#">
+										<li class="send-msg">
+											<i class="far fa-paper-plane"></i>
+										</li>
+									</a>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script src="js/jquery.min.js"></script>
+			<script src="js/darkmode-js.min.js"></script>
+			<script src="js/index.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					if( darkmode.isActivated() ){
+						darkmode.toggle();
+					}
+				});
+			</script>	
+	</body>
+</html>
